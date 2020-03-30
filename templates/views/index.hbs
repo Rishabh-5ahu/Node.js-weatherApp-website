@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Node.js-Weather App</title>
+<link rel="icon" href="/images/weather.png"/>
+<link rel="stylesheet" href="/css/style.css"/>
+<link rel="stylesheet" href='/css/bootstrap.min.css'/>
+
+</head>
+<body>
+    {{>header}}
+       
+<form class="form-inline d-flex justify-content-center md-form form-sm mt-0">
+     <i class="fas fa-search" aria-hidden="true"></i>
+    <input class="form-control form-control-lg ml-3 w-75 justify-center" style="margin-top:2px" type="text" placeholder="Search location" aria-label="Search">
+     <button  class="btn btn-primary btn-lg justify-center" type="submit">Search</button>
+</form>
+
+    <p id='msg1'></p>
+    <p id='msg2'></p>
+    <script src='/js/app.js'></script>
+</body>
+</html>
