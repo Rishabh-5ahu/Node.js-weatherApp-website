@@ -9,7 +9,7 @@ const url='https://api.darksky.net/forecast/9140cd08cc6e6ceaf5799a793d4a236f/'+e
         else if(response.body.error)
             callback('Unable to find the location',undefined)
         else{
-            callback(undefined,response.body.daily.data[0].summary+" It is currently "+response.body.currently.temperature+"  Degrees Celsius out. There is a "+response.body.currently.precipProbability+"% chance of rain.")
+            callback(undefined,response.body.daily.data[0].summary+" It is currently "+response.body.currently.temperature+"  Degrees Celsius out. This high today is "+response.body.daily.data[0].temperatureHigh+" with a low of "+response.body.daily.data[0].temperatureLow+". There is a "+response.body.currently.precipProbability+"% chance of rain.")
         }
     })
 }
